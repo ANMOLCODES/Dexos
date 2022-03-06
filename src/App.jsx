@@ -7,7 +7,7 @@ import { BeaconWallet } from "@taquito/beacon-wallet";
 import CONFIG from "./config.js";
 import axios from "axios";
 
-const btnClass = `px-4 py-2 text-xs uppercase font-semibold bg-yellow-400 text-white rounded-sm hover:bg-purple-600`;
+const btnClass = `px-4 py-2 text-xs uppercase font-semibold bg-yellow-600 text-white rounded-sm hover:bg-purple-600`;
 
 function Notification({ error, setError }) {
   return (
@@ -32,8 +32,8 @@ function Notification({ error, setError }) {
 function Balances({catToken, lpToken}) {
   return (
     <div className="bg-blue-900 shadow-sm flex items-center justify-center p-4 m-20 mb-20 space-x-10">
-      <span className="font-semibold text-white">🐱 Cat Token: {catToken}</span>
-      <span className="font-semibold text-white">💦 LP Token: {lpToken}</span>
+      <span className="font-semibold text-white">TST Token: {catToken}</span>
+      <span className="font-semibold text-white">LP Token: {lpToken}</span>
     </div>
   );
 }
@@ -254,7 +254,7 @@ function App() {
               value={liquidityXtz} 
               onChange={(e) => {setLiquidityXtz(e.target.value)}}
             />
-            <button className={btnClass}>💦 Add</button>
+            <button className={btnClass}>➕ Add</button>
           </div>
         </form>
       </div>
@@ -271,7 +271,7 @@ function App() {
               value={lpToBurn} 
               onChange={(e) => {setLpToBurn(e.target.value)}}
             />
-            <button className={btnClass}>🔥 Remove</button>
+            <button className={btnClass}>📛 Remove</button>
           </div>
         </form>
       </div>

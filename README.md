@@ -1,7 +1,7 @@
 # Dexos
 
 ## Some Deployed Contracts
-**🐱 CAT TOKEN**
+**TST TOKEN**
 KT1HrjGaoTmdZ8Znbup6bgV2gEpFF8tt9jo5
 
 **LP Token**
