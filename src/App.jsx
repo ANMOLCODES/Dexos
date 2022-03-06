@@ -29,10 +29,10 @@ function Notification({ error, setError }) {
   );
 }
 
-function Balances({catToken, lpToken}) {
+function Balances({tstToken, lpToken}) {
   return (
     <div className="bg-blue-900 shadow-sm flex items-center justify-center p-4 m-20 mb-20 space-x-10">
-      <span className="font-semibold text-white">TST Token: {catToken}</span>
+      <span className="font-semibold text-white">TST Token: {tstToken}</span>
       <span className="font-semibold text-white">LP Token: {lpToken}</span>
     </div>
   );
@@ -51,7 +51,7 @@ function App() {
 
   // For showing the balnces.
   const [lpBalance, setLpBalance] = useState(0);
-  const [catBalance, setCatBalance] = useState(0);
+  const [tstBalance, settstBalance] = useState(0);
 
   async function getBalance(userAddress, bigmapId) {
     const {data} = await axios.get(`https://api.granadanet.tzkt.io/v1/bigmaps/${bigmapId}/keys`);
@@ -66,18 +66,18 @@ function App() {
   }
   async function updateBalances() {
     if (tezos) {
-      const cat = await getBalance(
+      const tst = await getBalance(
         wallet,
         CONFIG.tokenBalanceBigMapId
       );
-      setCatBalance(cat);
+      settstBalance(tst);
 
       const lp = await getBalance(
         wallet,
         CONFIG.lpBalanceBigMapId
       );
       setLpBalance(lp);
-      console.log({cat, lp})
+      console.log({tst, lp})
     }
   }
   useEffect( () => {
@@ -124,17 +124,17 @@ function App() {
       else if(swapTokenAmount > 0) {
         console.log('Token-> Tez')
         // Swap Token -> Xtz
-        const catAmount = parseInt(swapTokenAmount * CONFIG.tokenDecimals);
+        const tstAmount = parseInt(swapTokenAmount * CONFIG.tokenDecimals);
         const tokenContract = await tezos.wallet.at(CONFIG.tokenAddress);
         const batch = await tezos.wallet.batch()
         .withContractCall(
           tokenContract.methods.approve(
             CONFIG.dexAddress,
-            catAmount,
+            tstAmount,
           )
         )
         .withContractCall(
-          dexContract.methods.token_to_tez(catAmount)
+          dexContract.methods.token_to_tez(tstAmount)
         )
         const batchOp = await batch.send();
         console.log("Operation hash:", batchOp.hash);
@@ -206,7 +206,7 @@ function App() {
       </nav>
 
       <Balances 
-        catToken={catBalance / CONFIG.tokenDecimals}
+        tstToken={tstBalance / CONFIG.tokenDecimals}
         lpToken={lpBalance / CONFIG.lpDecimals}
       />
       <div className=" m-20 p-4 bg-blue-900">

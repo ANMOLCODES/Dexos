@@ -10,8 +10,8 @@ def test():
   scenario = sp.test_scenario()
   token_metadata = {
       "decimals": "6",
-      "name": "🐱 CAT TOKEN",
-      "symbol": "CAT",
+      "name": "TEST TOKEN",
+      "symbol": "TST",
       "icon": 'https://smartpy.io/static/img/logo-only.svg'
   }
   contract_metadata = {
