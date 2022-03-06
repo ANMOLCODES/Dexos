@@ -8,20 +8,20 @@ Being in Web3 for about a year, transacting with real money has been a fear that
 
 ## Demo Screenshots
 ***Landing Page***
-![demo2](https://github.com/ANMOLCODES/PolyPlace/blob/master/Screenshots/HomePage.png)
+![demo2](https://github.com/ANMOLCODES/Dexos/blob/master/Dapp/screenshots/LP.png)
 
 
 ***DEX***
 ![demo3](https://github.com/ANMOLCODES/Dexos/blob/master/Dapp/screenshots/Dex.png)
 
 ***Features***
-![demo1](https://github.com/ANMOLCODES/PolyPlace/blob/master/Screenshots/BuyingNFT.png)
+![demo1](https://github.com/ANMOLCODES/Dexos/blob/master/Dapp/screenshots/features.png)
 
 ***Swap button interaction***
-![demo4](https://github.com/ANMOLCODES/PolyPlace/blob/master/Screenshots/UsersAssets.png)
+![demo4](https://github.com/ANMOLCODES/Dexos/blob/master/Dapp/screenshots/interaction.png)
 
 ***Result of interaction***
-![demo4](https://github.com/ANMOLCODES/PolyPlace/blob/master/Screenshots/UsersAssets.png)
+![demo4](https://github.com/ANMOLCODES/Dexos/blob/master/Dapp/screenshots/interaction2.png)
 
 ## Some Deployed Contracts
 **TST TOKEN**
