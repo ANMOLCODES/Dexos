@@ -12,7 +12,7 @@ Being in Web3 for about a year, transacting with real money has been a fear that
 
 
 ***DEX***
-![demo3](https://github.com/ANMOLCODES/PolyPlace/blob/master/Screenshots/NFTMinter.png)
+![demo3](https://github.com/ANMOLCODES/Dexos/blob/master/Dapp/screenshots/Dex.png)
 
 ***Features***
 ![demo1](https://github.com/ANMOLCODES/PolyPlace/blob/master/Screenshots/BuyingNFT.png)
