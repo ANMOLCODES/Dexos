@@ -1,6 +1,6 @@
 # Dexos
 
-A webapp that acts as an playground for new comers into blockchain. They can get accustomed to using applications like Dexs without the anxiety of losing their money or making wrong transactions. 
+A webapp that acts as a playground for new comers into blockchain. They can get accustomed to using applications like Dexs without the anxiety of losing their money or making wrong transactions. 
 
 # Problem Statement
 
